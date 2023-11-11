@@ -52,7 +52,7 @@ function filtrarPesquisa() {
     }
 }
 
-const botaoCategoria = document.querySelectorAll("superior__item");
+const botaoCategoria = document.querySelectorAll(".superior__item");
 
 botaoCategoria.forEach((botao) => {
     let nomeCategoria = botao.getAttribute("name");
@@ -65,7 +65,7 @@ function filtrarPorCategoria(filtro) {
         let categoria = video.querySelector(".categoria").textContent.toLowerCase();
         let valorFiltro = filtro.toLowerCase();
 
-        if (!categoria.includes(valorFiltro) && valorFiltro != "tudo") {
+        if (!categoria.includes(valorFiltro) && valorFiltro != 'tudo') {
             video.style.display = "none";
         } else {
             video.style.display = "block";
